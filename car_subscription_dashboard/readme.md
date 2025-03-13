@@ -2,7 +2,7 @@
 
 This repository contains a quick mock-up dashboard I created for an interview to demonstrate my understanding of key business intelligence metrics and dashboard design.
 
--
+<br>
 **📌 Project Overview**
 
 For this project, I simulated a basic data pipeline from dataset creation to dashboard visualization:
