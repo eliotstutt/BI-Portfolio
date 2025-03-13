@@ -3,6 +3,7 @@
 This repository contains a quick mock-up dashboard I created for an interview to demonstrate my understanding of key business intelligence metrics and dashboard design.
 
 
+
 **📌 Project Overview**
 
 For this project, I simulated a basic data pipeline from dataset creation to dashboard visualization:
@@ -18,9 +19,11 @@ For this project, I simulated a basic data pipeline from dataset creation to das
 🎨 Dashboard Design: Focused on metrics that align with the business model and ensured a design consistent with the brand’s identity.
 
 
+
 **🔗 Dashboard Link**
 
 You can view the interactive dashboard here: https://lookerstudio.google.com/reporting/c05cc1e8-e857-4adf-904e-38214b20ce79
+
 
 
 **📌 Key Metrics & Features**
@@ -34,6 +37,7 @@ You can view the interactive dashboard here: https://lookerstudio.google.com/rep
 👥 Customer Engagement Insights
 
 
+
 **🎯 Purpose**
 
 This project was designed as a proof of concept rather than a production-ready solution. The goal was to showcase:
@@ -45,6 +49,7 @@ This project was designed as a proof of concept rather than a production-ready s
 ✅ My approach to dashboard design and brand alignment.
 
 
+
 **🛠️ Tools & Technologies Used**
 
 🐍 Python: Data generation
@@ -52,6 +57,7 @@ This project was designed as a proof of concept rather than a production-ready s
 🔍 Google BigQuery: Data storage and transformation
 
 📊 Google Looker Studio: Data visualisation and dashboard design
+
 
 
 **📝 Notes**
