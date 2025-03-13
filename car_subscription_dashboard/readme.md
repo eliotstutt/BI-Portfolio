@@ -12,7 +12,7 @@ For this project, I simulated a basic data pipeline from dataset creation to das
 
 🗄️ Data Storage: Imported the dataset as a CSV file into Google BigQuery.
 
-🛠️ Data Cleaning & Transformation: Processed and cleaned the data when moving it from staging to production tables.
+🛠️ Data Cleaning & Transformation: Processed and cleaned the data when moving it from staging to <br>production tables.
 
 📈 Dashboard Creation: Connected BigQuery to Google Looker Studio (formerly Data Studio) to design <br>an interactive KPI and analysis dashboard.
 
@@ -22,7 +22,7 @@ For this project, I simulated a basic data pipeline from dataset creation to das
 
 **🔗 Dashboard Link**
 
-You can view the interactive dashboard here: https://lookerstudio.google.com/reporting/c05cc1e8-e857-4adf-904e-38214b20ce79
+[🔗 Dashboard Link](https://lookerstudio.google.com/reporting/c05cc1e8-e857-4adf-904e-38214b20ce79)
 
 <br>
 
