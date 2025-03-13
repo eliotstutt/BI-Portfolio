@@ -20,9 +20,8 @@ For this project, I simulated a basic data pipeline from dataset creation to das
 
 <br>
 
-**🔗 Dashboard Link**
 
-[🔗 Dashboard Link](https://lookerstudio.google.com/reporting/c05cc1e8-e857-4adf-904e-38214b20ce79)
+[**🔗 Dashboard Link**](https://lookerstudio.google.com/reporting/c05cc1e8-e857-4adf-904e-38214b20ce79)
 
 <br>
 
