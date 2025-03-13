@@ -12,11 +12,11 @@ For this project, I simulated a basic data pipeline from dataset creation to das
 
 🗄️ Data Storage: Imported the dataset as a CSV file into Google BigQuery.
 
-🛠️ Data Cleaning & Transformation: Processed and cleaned the data when moving it from staging to <br>production tables.
+🛠️ Data Cleaning & Transformation: Processed and cleaned the data when moving it from staging to production tables.
 
-📈 Dashboard Creation: Connected BigQuery to Google Looker Studio (formerly Data Studio) to design <br>an interactive KPI and analysis dashboard.
+📈 Dashboard Creation: Connected BigQuery to Google Looker Studio (formerly Data Studio) to design an interactive <br>KPI and analysis dashboard.
 
-🎨 Dashboard Design: Focused on metrics that align with the business model and ensured a design <br>consistent with <br>the brand’s identity.
+🎨 Dashboard Design: Focused on metrics that align with the business model and ensured a design consistent with <br>the brand’s identity.
 
 <br>
 
