@@ -1,6 +1,7 @@
 🚗 **Car Subscription Service Dashboard**
 
 This repository contains a quick mock-up dashboard I created for an interview to demonstrate my understanding of key business intelligence metrics and dashboard design.
+
 <br>
 
 **📌 Project Overview**
