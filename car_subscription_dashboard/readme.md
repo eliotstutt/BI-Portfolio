@@ -1,6 +1,6 @@
 🚗 **Car Subscription Service Dashboard**
 
-This repository contains a quick mock-up dashboard I created for an interview to demonstrate my understanding of <br>key business intelligence metrics and dashboard design.
+This repository contains a quick mock-up dashboard I created for an interview to demonstrate my understanding <br>of key business intelligence metrics and dashboard design.
 
 <br>
 
@@ -14,9 +14,9 @@ For this project, I simulated a basic data pipeline from dataset creation to das
 
 🛠️ Data Cleaning & Transformation: Processed and cleaned the data when moving it from staging to production tables.
 
-📈 Dashboard Creation: Connected BigQuery to Google Looker Studio (formerly Data Studio) to design an interactive <br>KPI and analysis dashboard.
+📈 Dashboard Creation: Connected BigQuery to Google Looker Studio (formerly Data Studio) to design <br>an interactive KPI and analysis dashboard.
 
-🎨 Dashboard Design: Focused on metrics that align with the business model and ensured a design consistent with <br>the brand’s identity.
+🎨 Dashboard Design: Focused on metrics that align with the business model and ensured a design <br>consistent with <br>the brand’s identity.
 
 <br>
 
@@ -62,7 +62,7 @@ This project was designed as a proof of concept rather than a production-ready s
 
 **📝 Notes**
 
-This project was completed under a time constraint as part of an interview preparation process. Given more time, I would refine the data further, incorporate more advanced analytics, and enhance interactivity within the dashboard.
+This project was completed under a time constraint as part of an interview preparation process. Given more <br>time, I would refine the data further, incorporate more advanced analytics, and enhance interactivity within the dashboard.
 
 <br>
 
