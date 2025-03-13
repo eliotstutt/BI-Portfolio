@@ -4,6 +4,13 @@ This repository contains a quick mock-up dashboard I created for an interview to
 
 
 
+
+
+
+
+
+
+
 **📌 Project Overview**
 
 For this project, I simulated a basic data pipeline from dataset creation to dashboard visualization:
