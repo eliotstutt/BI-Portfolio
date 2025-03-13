@@ -62,7 +62,7 @@ This project was designed as a proof of concept rather than a production-ready s
 
 **📝 Notes**
 
-This project was completed under a time constraint as part of an interview preparation process. Given more <br>time, I would refine the data further, incorporate more advanced analytics, and enhance interactivity within the dashboard.
+This project was completed under a time constraint as part of an interview preparation process. Given more time, I <br>would refine the data further, incorporate more advanced analytics, and enhance interactivity within the dashboard.
 
 <br>
 
