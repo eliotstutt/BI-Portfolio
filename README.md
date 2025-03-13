@@ -1,6 +1,6 @@
 **📊 Business Intelligence & Data Analytics Portfolio**
 
-Welcome to my portfolio repository! 👋 I am a Business Intelligence & Data Analytics enthusiast with a passion for transforming raw data into meaningful insights. While actively seeking opportunities in Australia, I am using this space to showcase my projects, technical skills, and problem-solving abilities.
+Welcome to my portfolio repository! 👋 I am a Business Intelligence & Data Analytics enthusiast with a <br>passion for transforming raw data into meaningful insights. While actively seeking opportunities in <br>Australia, I am using this space to showcase my projects, technical skills, and problem-solving abilities.
 
 **🚀 About Me**
 
@@ -18,7 +18,7 @@ This repository contains a variety of BI & Data Analytics projects, including:
 
 **🚗 Car Subscription Service Dashboard**
 
-🔗 Dashboard Link: https://lookerstudio.google.com/u/0/reporting/c05cc1e8-e857-4adf-904e-38214b20ce79/page/3LX9E
+[🔗 Dashboard Link](https://lookerstudio.google.com/reporting/c05cc1e8-e857-4adf-904e-38214b20ce79)
 
 📌 A mock-up dashboard designed for an interview to demonstrate key subscription-based business <br>metrics and dashboard design skills. Built using:
 
