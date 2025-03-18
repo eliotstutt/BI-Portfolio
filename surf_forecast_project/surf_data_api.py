@@ -1,4 +1,4 @@
-### Full Script
+### Full Script (with table creation removed)
 
 ```python
 import requests
@@ -7,14 +7,20 @@ import pandas as pd
 from google.cloud import bigquery
 import os
 
-# Set these as environment variables in your Cloud Function
+# These are expected as environment variables in your Cloud Function:
+# - STORMGLASS_API_KEY: Your StormGlass API key
+# - PROJECT_ID: Your GCP project ID
+# - DATASET_ID: The dataset name in BigQuery
+# - TABLE_ID: The BigQuery table name
+
 STORMGLASS_API_KEY = os.environ.get("STORMGLASS_API_KEY")
 PROJECT_ID = os.environ.get("PROJECT_ID")
 DATASET_ID = os.environ.get("DATASET_ID")
 TABLE_ID = os.environ.get("TABLE_ID")
 
-LAT = 54.2361   # Approx Isle of Man
-LNG = -4.5481
+# Coordinates for Gansey, Isle of Man
+LAT = 54.0713
+LNG = -4.6585
 
 # Convert m/s to mph
 def ms_to_mph(ms):
@@ -72,71 +78,3 @@ def fetch_surf_data():
         records.append(record)
 
     return pd.DataFrame(records)
-
-def ensure_table_exists(client):
-    table_ref = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}"
-    try:
-        client.get_table(table_ref)
-    except Exception:
-        schema = [
-            bigquery.SchemaField("timestamp", "TIMESTAMP"),
-            bigquery.SchemaField("wave_height", "FLOAT"),
-            bigquery.SchemaField("wave_direction", "FLOAT"),
-            bigquery.SchemaField("wave_period", "FLOAT"),
-            bigquery.SchemaField("swell_height", "FLOAT"),
-            bigquery.SchemaField("swell_direction", "FLOAT"),
-            bigquery.SchemaField("swell_period", "FLOAT"),
-            bigquery.SchemaField("secondary_swell", "FLOAT"),
-            bigquery.SchemaField("wind_wave_height", "FLOAT"),
-            bigquery.SchemaField("wind_wave_direction", "FLOAT"),
-            bigquery.SchemaField("wind_wave_period", "FLOAT"),
-            bigquery.SchemaField("water_temperature", "FLOAT"),
-            bigquery.SchemaField("tide_height", "FLOAT"),
-            bigquery.SchemaField("air_temperature", "FLOAT"),
-            bigquery.SchemaField("wind_speed", "FLOAT"),
-            bigquery.SchemaField("wind_direction", "FLOAT"),
-            bigquery.SchemaField("wind_gust", "FLOAT"),
-            bigquery.SchemaField("sunrise", "STRING"),
-            bigquery.SchemaField("sunset", "STRING"),
-            bigquery.SchemaField("first_light", "STRING"),
-            bigquery.SchemaField("last_light", "STRING"),
-        ]
-        table = bigquery.Table(table_ref, schema=schema)
-        client.create_table(table)
-
-def update_bigquery_table(df):
-    client = bigquery.Client()
-    ensure_table_exists(client)
-
-    start_date = datetime.datetime.utcnow().date()
-    end_date = start_date + datetime.timedelta(days=5)
-
-    delete_query = f"""
-        DELETE FROM `{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}`
-        WHERE DATE(timestamp) BETWEEN '{start_date}' AND '{end_date}'
-    """
-
-    client.query(delete_query).result()
-
-    job_config = bigquery.LoadJobConfig(
-        write_disposition="WRITE_APPEND",
-        autodetect=True,
-        source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
-    )
-
-    import io
-    json_data = df.to_json(orient="records", lines=True)
-
-    load_job = client.load_table_from_file(
-        file_obj=io.StringIO(json_data),
-        destination=f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}",
-        job_config=job_config,
-        rewind=True,
-    )
-    load_job.result()
-
-def main(request=None):
-    df = fetch_surf_data()
-    update_bigquery_table(df)
-    return "Surf forecast data updated successfully!"
-```
