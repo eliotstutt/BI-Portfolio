@@ -1,4 +1,4 @@
-### Full Script (with table creation removed)
+### Full Script
 
 ```python
 import requests
@@ -7,12 +7,7 @@ import pandas as pd
 from google.cloud import bigquery
 import os
 
-# These are expected as environment variables in your Cloud Function:
-# - STORMGLASS_API_KEY: Your StormGlass API key
-# - PROJECT_ID: Your GCP project ID
-# - DATASET_ID: The dataset name in BigQuery
-# - TABLE_ID: The BigQuery table name
-
+# These are expected as environment variables in Cloud Function
 STORMGLASS_API_KEY = os.environ.get("STORMGLASS_API_KEY")
 PROJECT_ID = os.environ.get("PROJECT_ID")
 DATASET_ID = os.environ.get("DATASET_ID")
